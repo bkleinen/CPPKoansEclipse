@@ -8,7 +8,7 @@
 #ifndef STOPMEDITATING_H_
 #define STOPMEDITATING_H_
 
-#define QUIT_ON_UNMET_EXPECTATION false
+#define QUIT_ON_UNMET_EXPECTATION true
 
 class StopMeditating {
 public:

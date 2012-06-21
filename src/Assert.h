@@ -46,6 +46,7 @@ void expectThatNot (string message, T expected, T actual) {
 }
 #define XXXXX
 #ifdef XXXXX
+
 template <class T,class U>
 void expectThat (string message, T expected, U actual) {
 	expectThatRaw(message+" (expected was casted to "+typeid(U).name()+")",U(expected),actual);
@@ -56,6 +57,7 @@ template <class T,class U>
 void expectThatNot (string message, T expected, U actual) {
 	expectThatNotRaw(message+" (expected was casted to "+typeid(U).name()+")",U(expected),actual);
 }
+
 #endif
 
 template <class T>
