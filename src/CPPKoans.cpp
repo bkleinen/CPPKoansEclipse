@@ -5,6 +5,7 @@
 
 #include <iostream>
 
+#include "AboutAssignment.h"
 #include "AboutControlStructures.h"
 #include "AboutDataTypes.h"
 #include "AboutFunctionCalls.h"
@@ -19,6 +20,7 @@
 #include "AboutAssert.h"
 #include "AboutBitwiseOperators.h"
 #include "AboutUserDefinedTypes.h"
+#include "AboutCopyConstructor.h"
 using namespace std;
 
 /**
@@ -28,26 +30,28 @@ using namespace std;
 
 int main() {
 	cout << "Running CPP Koans. No further output should be produced." << endl;
-	try {/*
+	cout << "========================================================" << endl;
+		try {
+
 		AboutControlStructures::meditate();
 		AboutDataTypes::meditate();
 		AboutErrorHandling::meditate();
-	    AboutPointers::meditate();
-		AboutClasses::meditate();
+		AboutAssignment::meditate();
+		AboutPointers::meditate();
+		AboutArrays::meditate();
+	    AboutClasses::meditate();
 		AboutArrays::meditate();
 		AboutStrings::meditate();
-		*/
 		AboutFunctionCalls::meditate();
-		/*
 		AboutAssert::meditate();
 		AboutBitwiseOperators::meditate();
 		AboutUserDefinedTypes::meditate();
-		*/
+		AboutVectors::meditate();
+		AboutCopyConstructor::meditate();
 
 	} catch (const StopMeditating &e) {
 		cout << "catched StopMeditating." << endl;
 	}
-//	AboutVectors::meditate();
 //	AboutStdInAndOut::meditate();
 }
 

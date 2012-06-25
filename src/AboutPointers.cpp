@@ -43,11 +43,56 @@ void aboutPointersAndArrays(){
 		expectThat("now the defaultChar should be in every cell #"+i,defaultChar,p[i]);
 	}
 }
+void aboutPointerExercise(){
+
+	typedef double *PDouble;
+	double p2, p4, *p3;
+	PDouble p1,*p5;
+
+	p4 = 2000;
+	p2 = 1000;
+	p1 = &p4;
+	p5 = &p1;
+	p3 = p1;
+
+	*p1 += 100;
+
+
+	expectThat("p1",_____,p1);
+	expectThat("p2",_____,p2);
+	expectThat("p3",_____,p3);
+	expectThat("p4",_____,p4);
+	expectThat("p5",_____,p5);
+	expectThat("p5",_____,*p5);
+    expectThatNot("p1 p3 don't have the same address",&p1,&p3);
+	expectThat("p5",_____,*p5);
+	expectThat("p5",_____,**p5);
+
+
+
+
+
+
+
+
+
+
+
+	expectThat("p1",_____,p1);
+	expectThat("p2",_____,p2);
+	expectThat("p3",_____,p3);
+	expectThat("p4",_____,p4);
+	expectThat("p5",_____,p5);
+
+
+	//Was steht in den Variablen drin?
+}
 void AboutPointers::meditate(){
 	aboutPointers();
 	aboutAssignmentCompatibility();
 	aboutDynamicAllocation();
 	aboutPointersAndArrays();
+	aboutPointerExercise();
 
 }
 

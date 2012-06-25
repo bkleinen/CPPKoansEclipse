@@ -38,7 +38,7 @@ void aboutWhileLoop() {
 		count++;
 		++j;
 	}
-	expectThat("the while loop should have been run 100 times", _____,
+	expectThat("the while loop should have been run 100 times", 100,
 			count);
 }
 void aboutForLoop() {
@@ -47,7 +47,7 @@ void aboutForLoop() {
 		count++;
 	}
 
-	expectThat("the for loop should have been run 100 times", _____,
+	expectThat("the for loop should have been run 100 times", 100,
 			count);
 }
 void aboutSwitchStatement() {
