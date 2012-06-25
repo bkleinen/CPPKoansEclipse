@@ -28,7 +28,7 @@ using namespace std;
 
 int main() {
 	cout << "Running CPP Koans. No further output should be produced." << endl;
-	try {
+	try {/*
 		AboutControlStructures::meditate();
 		AboutDataTypes::meditate();
 		AboutErrorHandling::meditate();
@@ -36,10 +36,13 @@ int main() {
 		AboutClasses::meditate();
 		AboutArrays::meditate();
 		AboutStrings::meditate();
+		*/
 		AboutFunctionCalls::meditate();
+		/*
 		AboutAssert::meditate();
 		AboutBitwiseOperators::meditate();
 		AboutUserDefinedTypes::meditate();
+		*/
 
 	} catch (const StopMeditating &e) {
 		cout << "catched StopMeditating." << endl;
